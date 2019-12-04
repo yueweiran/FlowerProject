@@ -15,7 +15,7 @@
 		"scopeDataCheck": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.9.4",
 	"appid": "wx076e23050f4d9cd1",
 	"projectname": "flowerProject",
 	"debugOptions": {

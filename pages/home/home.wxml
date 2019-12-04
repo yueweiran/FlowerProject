@@ -1,2 +1,16 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
+<!--1.小程序的数据绑定 将对应js data里定义的参数通过双大括号{{}}也称Mustach来获取-->
+<view>Hello {{name}}</view>
+<view>我的年龄{{age}}</view>
+<!--也可以在里面做运算-->
+<view>我的年龄{{age-8}}</view>
+
+
+<!--2.列表展示针对数组列表 需要循环可以使用wx:for  单个的话直接用{{students[0].name}}-->
+<view wx:for="{{students}}">{{item.name}}-{{item.age}}</view>
+
+
+<!--3.事件监听改变data-->
+<view>当前计数：{{counter}}</view>
+<button size="mini" bindtap="handleJiaBtnClick">+</button>
+<button size="mini" bindtap="handleJianBtnClick">-</button>

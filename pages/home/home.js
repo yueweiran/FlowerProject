@@ -5,14 +5,34 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name:'Yuexiansen',
+    age:26,
+    students:[
+      {id: 120, name: '张三', age: 19 },
+      {id: 121, name: '李四', age: 20 },
+      {id: 122, name: '王五', age: 18 },
+      {id: 123, name: '赵六', age: 19 }
+    ],
+    counter:0
   },
-
+  handleJiaBtnClick(){
+    this.setData({
+      counter:this.data.counter+1
+    })
+  },
+  handleJianBtnClick(){
+    if(this.data.counter>0){
+      this.setData({
+        counter: this.data.counter - 1
+      })
+    }
+   
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+     
   },
 
   /**
