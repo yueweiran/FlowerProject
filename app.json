@@ -2,5 +2,51 @@
   "pages": [
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "花都",
+    "backgroundColor":"#DCDCDC",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar":{
+    "list":[
+      {
+      "pagePath":"pages/home/home",
+      "text":"首页",
+      "iconPath":"assets/tabbar/first.png",
+      "selectedIconPath":"assets/tabbar/firstsel.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "电台",
+        "iconPath": "assets/tabbar/video.png",
+        "selectedIconPath": "assets/tabbar/videosel.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "花艺常识",
+        "iconPath": "assets/tabbar/flower.png",
+        "selectedIconPath": "assets/tabbar/flowersel.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "情感树洞",
+        "iconPath": "assets/tabbar/tree.png",
+        "selectedIconPath": "assets/tabbar/treesel.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "我的",
+        "iconPath": "assets/tabbar/me.png",
+        "selectedIconPath": "assets/tabbar/mesel.png"
+      }
+    ],
+    "position":"bottom",
+    "borderStyle":"black",
+    "backgroundColor":"#F5F5F5",
+    "selectedColor": "#ff5777",
+    "color": "#707070"
+  }
 }

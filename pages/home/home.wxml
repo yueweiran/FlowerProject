@@ -1,2 +1,13 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello World</text>
+<!--如果要想获取用户信息通过点击按钮的方式去实现的话，
+需要在button中设置open-type并且把对应的值改为getUserInfo
+并且把常用的bindtap改为bindgetuserinfo
+-->
+<button 
+    size="mini" 
+    open-type="getUserInfo" 
+    bindgetuserinfo="handerGetUserInfo">
+  获取授权
+</button>
+<!--展示用户信息也可以使用open-data标签来实现-->
+<open-data type="userNickName"></open-data>
